@@ -28,7 +28,7 @@ app.post("/post", async (req,res) => {
 
   try{
     let value = await User.insertMany(body);
-    res.status(201).send({ message : "Data Inserted",value })
+    res.status(201).send({ message : "Data Inserted", value })
 
   }catch(error) {
     console.log(error)
